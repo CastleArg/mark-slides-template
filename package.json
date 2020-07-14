@@ -1,0 +1,16 @@
+{
+  "name": "slides-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf public && mkdir public && cp index.html public && cp -r node_modules/reveal.js/dist public && cp -r node_modules/reveal.js/plugin public",
+    "start": "rm -rf dist && cp -r node_modules/reveal.js/dist . && rm -rf plugin && cp -r node_modules/reveal.js/plugin .  && npx serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "reveal.js": "^4.0.2"
+  }
+}
